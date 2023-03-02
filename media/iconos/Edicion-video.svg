@@ -1,0 +1,10 @@
+<svg width="64" height="65" viewBox="0 0 64 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Iconos/Intereses/Edicion-video">
+<rect y="0.5" width="64" height="64" rx="8" fill="#5D8AAB"/>
+<g id="Edicion-video">
+<path id="Vector" d="M18 22.4375C18 22.0563 18.1475 21.6906 18.4101 21.421C18.6726 21.1515 19.0287 21 19.4 21H44.6C44.9713 21 45.3274 21.1515 45.59 21.421C45.8525 21.6906 46 22.0563 46 22.4375V42.5625C46 42.9437 45.8525 43.3094 45.59 43.579C45.3274 43.8486 44.9713 44 44.6 44H19.4C19.0287 44 18.6726 43.8486 18.4101 43.579C18.1475 43.3094 18 42.9437 18 42.5625V22.4375Z" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+<path id="Vector_2" d="M40.4 21V44M23.6 21V44M41.8 28.1875H46M41.8 36.8125H46M18 28.1875H22.2M18 26.75V29.625M21.5 21H25.7M21.5 44H25.7M38.3 21H42.5M38.3 44H42.5M18 36.8125H22.2M18 35.375V38.25M46 35.375V38.25M46 26.75V29.625" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M29.8999 28.9062L35.4999 32.5L29.8999 36.0937V28.9062Z" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>
