@@ -39,6 +39,17 @@ body{
   color: #c1c7c7;
   /* display: flex;
   flex-direction: column; */
+  
+}
+
+.body::-webkit-scrollbar {
+  width: 8px;
+  background: var(--tuna);
+}
+
+.body::-webkit-scrollbar-thumb {
+  background: var(--amazon);
+  border-radius: 4px;
 }
 
 a{
@@ -93,12 +104,18 @@ a{
     line-height: 19px;
     align-items: center;
     padding: 9px 16px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
 
 .nav__links:hover {
   background-color: var(--silver-tree);
   border-radius: 8px;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.nav__links:focus{
+  background: var(--silver-tree);
+  border: solid 1px var(--white);
+  box-shadow: none;
 }
 
 /*----------Menu Lateral-------------*/
@@ -430,6 +447,7 @@ h1{
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25)
 }
 
+
 .contact__me{
   font-family: 'Roboto', sans-serif;
   text-align: center;
@@ -473,15 +491,13 @@ h1{
   font-family: 'Roboto', sans-serif;
   position: absolute;
   left: 0;
-  padding: 10px 0;
+  padding: 0 1rem;
   pointer-events: none;
   font-size: 1em;
   transition: 0.5s;
   color: var(--woodsmoke);
   letter-spacing: 0.05em;
 }
-
-
 
 .form__text:valid ~ .form__label,
 .form__text:focus ~ .form__label {
@@ -513,7 +529,7 @@ h1{
   font-family: 'Roboto', sans-serif;
   width: 350px;
   height: 59px;
-  padding: 15px;
+  padding: 16px;
   outline: none;
   resize: none;
   font-size: 1em;
@@ -523,6 +539,12 @@ h1{
 .textarea:is(:focus, :valid){
   border-color: var(--horizon);
 }
+
+.textarea:is(:focus, :valid)::placeholder{
+  font-family: 'Roboto', sans-serif;
+  color: var(--white);
+}
+
 .textarea::-webkit-scrollbar{
   width: 0;
 }
@@ -535,4 +557,39 @@ h1{
 
 }
 
+.form__btn{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background: transparent;
+}
 
+.form__btn--send{
+  cursor: pointer;
+  padding: 9px 1rem;
+  background: var(--amazon);
+  color: var(--white);
+  font-family: 'Nunito Sans', sans-serif;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.form__btn--send:hover{
+  padding: 9px 1rem;
+  background: var(--silver-tree);
+  border: none;
+  border-radius: 8px;
+}
+
+.form__btn--send:focus{
+  background: var(--silver-tree);
+  border: solid 1px var(--tuna);
+  box-shadow: none;
+}
+/**/
+/*------------------FORMULARIO----------------- */
+/**/
