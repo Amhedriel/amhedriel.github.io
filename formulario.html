@@ -66,52 +66,75 @@
         <div class="u-wraper">
           <div class="contact__content">
             <form action="enviar.html" id="form" class="form" method="post">
-              <h3 class="tag"><span>HABLEMOS</span></h3>
-              <br>
-              <label for="establishment">Institución<span></span></label>
-              <br>
-              <input type="text" name="establishment" id="establishment" placeholder="Establecimiento, organismo" autofocus>
-              <br>
-              <label for="country">País</label>
-              <br>
-              <input type="text" name="country" id="country" placeholder="De institución en funciones">
-              <br>
-              <label for="name">Nombre completo<span>*</span></label>
-              <br>
-              <input type="text" name="name" id="name" placeholder="Nombres y apellidos" required>
-              <br>
-              <label for="email">Correo electrónico<span>*</span></label>
-              <br>
-              <input type="email" name="email" id="email" placeholder="correo@proveedor.com" required>
-              <br>
-              <label for="phone">Teléfono<span>*</span></label>
-              <br>
-              <input type="tel" name="phone" id="phone" placeholder="Con código de área" required>
-              <br>
-              <label for="reason">Motivo del contacto<span>*</span></label>
-              <br>
-              <textarea for="reason" name="reason" id="reason" cols="30" rows="15"
-              placeholder="max. 350 caracteres. Se responderá a la brevedad posible" minlength="7" maxlength="350"
-              required></textarea>
-              <br>
+
+              <h2 class="contact__me"><span>HABLEMOS!</span></h2>
+
+              
+              <div class="form__container">
+                <div class="form__input--box">
+                  <input class="form__text form__border1" type="text" name="establishment" id="establishment" required="required" autofocus>
+                  <span class="form__label" for="establishment">Institución *</span>
+                  <i class="form__base"></i>
+                </div>
+              </div>
+
+              <div class="form__container">
+                <div class="form__input--box">
+                  <input class="form__text" type="text" name="country" id="country" required="required">
+                  <span class="form__label" for="country">País *</span>
+                  <i class="form__base"></i>
+                </div>
+              </div>
+
+              <div class="form__container">
+                <div class="form__input--box">
+                  <input class="form__text" type="text" name="name" id="name" required="required">
+                  <span class="form__label" for="name">Nombre completo *</span>
+                  <i class="form__base"></i>
+                </div>
+              </div>
+
+              <div class="form__container">
+                <div class="form__input--box">
+                  <input class="form__text" type="email" name="email" id="email" required="required">
+                  <span class="form__label">Correo electrónico *</span>
+                  <i class="form__base"></i>
+                </div>
+              </div>
+
+              <div class="form__container">
+                <div class="form__input--box">
+                  <input class="form__text" type="tel" name="phone" id="phone" required="required">
+                  <span class="form__label" for="phone">Teléfono *</span>
+                  <i class="form__base"></i>
+                </div>
+              </div>
+
+              <div class="form__container form__border2">
+                <div class="form__input--box">
+                  <span class="form__label textarea "></span>
+                  <i class="form__base"></i>
+
+                  <div class="wrapper">
+                    <textarea class="form__text textarea" for="textarea" name="textarea" id="textarea" required="required" placeholder="Motivo del contacto *"></textarea>
+                    <i class="form__base"></i>
+                  </div>
+
+                </div>
+              </div> 
+
               <button type="submit" class="btn primary full">ENVIAR FORMULARIO POR EMAIL</button>
+
             </form>
-            <a href="mailto:davikin_01@hotmail.com" class="talk" id="talk">mail</a>
+            <a href="mailto:davikin_01@hotmail.com" class="talk" id="talk"></a>
+
           </div>
         </div>
       </section>
     </div>
   </main>
   <!------------INPUT LABEL------------->
-  <section class="form__body">
-    <div class="form__container">
-      <div class="form__input--box">
-        <input type="text">
-        <span>Nombre Completo</span>
-        <i></i>
-      </div>
-    </div>
-  </section>
+
 
   <footer class="footer">
     <script>
@@ -129,6 +152,14 @@
           $buttonMailto.setAttribute('href', `mailto:davikin_01@hotmail.com?subject=${form.get('email')}&body=Establecimiento: "${form.get('establishment')}" País: "${form.get('country')}" Nombre:"${form.get('name')}" Teléfono: "${form.get('phone')}" Contacto: "${form.get('reason')}"`);
           $buttonMailto.click();
         }
+      
+        const textarea = document.querySelector('textarea');
+        textarea.addEventListener('keyup', e =>{
+          textarea.style.height = 'auto';
+          let cajaDeTexto = e.target.scrollHeight;
+          console.log(cajaDeTexto)
+          textarea.style.height = `${cajaDeTexto}px`;
+        });
     </script>
   </footer>
   
