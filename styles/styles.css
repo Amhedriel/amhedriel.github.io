@@ -124,6 +124,7 @@ a{
     align-content: flex-start;
     /* padding: 1rem 0; */
     height: 100%;
+    z-index: 20;
   }
 
 .nav__logo--lateral{
