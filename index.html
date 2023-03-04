@@ -31,44 +31,47 @@
   <!-- -------------------MAIN------------------- -->
   <main> 
     <!---------- MENU LATERAL ----------->
-    <div class="nav__main--lateral">
-      <img class="nav__logo--lateral" src="../media/img/LOGO.png" width="250px" alt="Logo Amhedriel Project">
-      <a href="/index.html" class="nav__main--link-item">
-        <h2 class="nav-left">HOME</h2>
-      </a>
-      <a href="#acerca" class="nav__main--link-item">
-        <h2 class="nav-left">ACERCA</h2>
-      </a>
-      <a href="#estudios" class="nav__main--link-item">
-        <h2 class="nav-left">ESTUDIOS</h2>
-      </a>
-      <a href="#habilidades" class="nav__main--link-item">
-        <h2 class="nav-left">HABILIDADES</h2>
-      </a>
-      <a href="https://www.figma.com/file/GMF81DJfvBrvJNzX767Kq1/UX-CV?node-id=0%3A1&t=iAqLsqw3Jnn95zYx-1" class="nav__main--link-item">
-        <h2 class="nav-left">UX</h2>
-      </a>
-      <a href="https://www.figma.com/file/vkwjD40X7IA0zffO7PCFXp/UI-CV?node-id=0%3A1&t=BPAb12YhcnqJM5k3-1" class="nav__main--link-item">
-        <h2 class="nav-left">UI</h2>
-      </a>
-      <pre class="nav__pre">
-        My CV.       
-        ALL RIGHTS RESERVED BY
-        DAVID AMHED BELTRÁN R. DE C.
-      </pre>
-    </div>
+    
+      <div class="full__menu full__menu--ul nav__main--lateral">
+        <img class="nav__logo--lateral" src="media/img/LOGO.png" width="200px" alt="Logo Amhedriel Project">
+        <a href="#home" class="nav__main--link-item">
+          <h2 class="nav-left">HOME</h2>
+        </a>
+        <a href="#acerca" class="nav__main--link-item">
+          <h2 class="nav-left">ACERCA</h2>
+        </a>
+        <a href="#estudios" class="nav__main--link-item">
+          <h2 class="nav-left">ESTUDIOS</h2>
+        </a>
+        <a href="#habilidades" class="nav__main--link-item">
+          <h2 class="nav-left">HABILIDADES</h2>
+        </a>
+        <a href="https://www.figma.com/file/GMF81DJfvBrvJNzX767Kq1/UX-CV?node-id=0%3A1&t=iAqLsqw3Jnn95zYx-1" class="nav__main--link-item">
+          <h2 class="nav-left">UX</h2>
+        </a>
+        <a href="https://www.figma.com/file/vkwjD40X7IA0zffO7PCFXp/UI-CV?node-id=0%3A1&t=BPAb12YhcnqJM5k3-1" class="nav__main--link-item">
+          <h2 class="nav-left">UI</h2>
+        </a>
+        <pre class="nav__pre">
+        My CV.
+        ALL RIGHTS 
+        RESERVED 
+        BY DAVID AMHED 
+        BELTRÁN R. DE C.
+        </pre>
+      </div>
 
     <!------ PRESENTACIÓN ---------->
-    <section class=" container img">
+    <section class="container img">
       <div class="header__container">
 
-        <h2 class="header_subtitle--hola">--- HOLA! MI NOMBRE ES:</h2>
+        <h2 class="header_subtitle--hola"  id="home">--- HOLA! MI NOMBRE ES:</h2>
         <br>
         <h1 class="header__title">DAVID AMHED <wbr> BELTRÁN <wbr> RUBÍN <wbr>DE CELIS</h1>
         <br>
         <h2 class="header__subtitle">DISEÑADOR Y DESARROLLADOR WEB</h2>
         <br>
-        <a  id="acerca" href="" class="cta">DESCARGAR CV</a>
+        <input class="header__button" id="acerca" href="#" class="cta" placeholder="DESCARGAR CV" disabled></input>
       </div>
     </section>
 
@@ -219,7 +222,7 @@
       </article>
       
     </section>
-      <!-- -------------------HABILIDADES------------------- -->
+      <!-----------------HABILIDADES------------------->
 
     <section id="habilidades" class="container__habilidades">
       <!--------SUBTITULO----------->

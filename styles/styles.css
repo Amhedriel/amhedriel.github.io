@@ -66,7 +66,7 @@ a{
   background: var(--tuna);
   position: fixed;
   display: table;
-  z-index: 100;
+  z-index: 10;
 }
 
 .nav__logo {
@@ -120,34 +120,28 @@ a{
 
 /*----------Menu Lateral-------------*/
 
-.nav__main--lateral{
-  position: absolute;
-  position: fixed;
-  background-color: var(--tuna);
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: space-evenly;
-  padding: 0 4rem;
-  margin-top: 51px;
-  height: 990px;
-}
+  .nav__main--lateral{
+    position: fixed;
+    background-color: var(--tuna);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    padding: 0 1rem;
+    margin-top: 60px;
+    height: 1020px;
+  }
 
-.nav-left{
-  margin: 1em;
+  .nav-left{
+    margin: 1em;
+  }
+  
+  .nav__pre{
+    padding-top: 30%;
+    margin: 0%;
+    font-family: 'Nunito Sans', sans-serif;
 
-}
-
-.nav__pre{
-  /* margin-top: 10rem; */
-  padding: 0%;
-  margin: 0%;
-  font-family: 'Nunito Sans', sans-serif;
-  bottom: 2;
-}
-
-
-
+  }
 
 
 /*----------PRESENTACIÓN----------*/
@@ -155,8 +149,8 @@ a{
   min-height: 1061px;
   background-image: url(/media/img/computer.jpg);
   background-position: center center;
-  /* background-attachment: fixed; */
   background-size: cover;
+  z-index: -20;
 }
 
 .container {
@@ -167,7 +161,7 @@ a{
   width: 48%;
   background-color: #383c4370;
   margin-right: 20%;
-  margin-left: 23.5%;
+  margin-left: 25.5%;
   padding-top: 20%;  
   padding-left: 1rem;
   text-align: left;
@@ -178,12 +172,23 @@ a{
 .header__title--hola {
   padding-top: 5rem;
 }
-.header__title {
 
+.header__title {
   font-size: 4rem;
   letter-spacing: 2px;
   font-family: 'Roboto', sans-serif;
-} 
+}
+
+.header__button{
+  font-family: 'Nunito Sans',sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 9px 16px;
+  background: var(--silver-sand);
+  border-radius: 8px;
+}
+
 h1{
   text-shadow: 1px 1px 1px var(--horizon), 3px 3px 2px var(--horizon);
 }
@@ -442,7 +447,7 @@ h1{
   background: var(--gradient-green);
   padding: 2rem;
   padding-top: 180px;
-  margin-left: 19.2%;
+  margin-left: 12.5%;
   color: var(--woodsmoke);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25)
 }
@@ -593,3 +598,42 @@ h1{
 /**/
 /*------------------FORMULARIO----------------- */
 /**/
+
+
+
+/*-------------------RESPONSIVE CODE START----------------------*/
+/* 
+@media screen and (max-width: 1250px){
+  .full__wrapper ul{
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  .full__link{
+    margin-left: 30px;
+  }
+
+}
+
+
+@media screen and (max-width: 900px) {
+  .full__wrapper{
+    display: block;
+    position: fixed;
+    bottom: red;
+    height: 100%;
+    width: 100%;
+    top: 70px;
+    left: 0%;
+    margin-left: 0;
+    max-width: 350px;
+
+  }
+  
+} 
+*/
+/*------------------------------------------------------------*/
+
+
+
+

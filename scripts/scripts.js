@@ -26,6 +26,5 @@ const textarea = document.querySelector('textarea');
 textarea.addEventListener('keyup', e =>{
   textarea.style.height = 'auto';
   let cajaDeTexto = e.target.scrollHeight;
-  console.log(cajaDeTexto)
   textarea.style.height = `${cajaDeTexto}px`;
 });
