@@ -124,15 +124,15 @@ a{
 /*----------Menu Lateral-------------*/
 
 .nav__main--lateral{
-    font-family: 'Nunito Sans', sans-serif;
-    position: fixed;
-    background-color: var(--tuna);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: flex-start;
-    /* padding: 1rem 0; */
-    height: 100%;
+  font-family: 'Nunito Sans', sans-serif;
+  position: fixed;
+  background-color: var(--tuna);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+  /* padding: 1rem 0; */
+  height: 100%;
 }
 
 .nav__logo--lateral{
@@ -263,7 +263,7 @@ h1{
 }
 .subtitle-body{
   text-align: left;
-  margin-left: 226px;
+  margin-left: 2.5rem;
 }
 
 .subtitle-acerca{
@@ -283,18 +283,18 @@ h1{
 .subtitle-acerca::after, .subtitle-acerca::before{
 content: '';
 position: absolute;
-width: 220px;
+width: 120px;
 height: 4px;
 background-color: currentColor;
 top: 0.8em;
 }
 
 .subtitle-acerca::before{
-  left: -226px;
+  left: -126px;
 }
 
 .subtitle-acerca::after{
-  right: -226px;
+  right: -126px;
 }
 /*--------TEXTO----------*/
 
@@ -521,13 +521,14 @@ top: 0.8em;
   background: var(--gradient-green);
   padding: 2rem;
   padding-top: 180px;
-  margin-left: 11%;
+  margin-left: 17.5%;
   color: var(--woodsmoke);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
 }
+
 .formulario__sub-color{
   background: var(--tuna);
-  padding-left: 29rem;
+  padding-left: 19rem;
 }
 
 .contact__me{
