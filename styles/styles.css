@@ -8,18 +8,19 @@
   --woodsmoke: #131415;
   --white: #ffffff;
   --woodsmoke-025: #13141535;
+  --woodsmoke-050: #13141570;
 
   /* primarios */
   --tuna: #383c43;
   --silver-sand: #c1c7c7;
-    --silver-tree: #64b49d;
-    --shuttle-gray: #5c6d80;
-    --pine-cone: #725d54;
-    --horizon: #5d8aab;
-    --apple-blossom: #ab4e42;
-    --amazon: #377a60;
-    --skin: #FBBEBE;
-    --skined: #E2ABAB;
+  --silver-tree: #64b49d;
+  --shuttle-gray: #5c6d80;
+  --pine-cone: #725d54;
+  --horizon: #5d8aab;
+  --apple-blossom: #ab4e42;
+  --amazon: #377a60;
+  --skin: #FBBEBE;
+  --skined: #E2ABAB;
 
   /* effects */
   --gradient: linear-gradient(#c1c7c7 0%, #383c43 10%, #131415);
@@ -235,9 +236,7 @@ a {
 .container__acerca,
 .container__estudios,
 .container__habilidades,
-.container__portfolio,
-.container__contactos,
-.container__pie{
+.container__contactos{
   width: 73%;
   /* background-color: #383c4370; */
   /* margin-right: 15%; */
@@ -501,6 +500,7 @@ top: 0.8em;
 }
 /*-----------------FIN METERS---------------*/
 
+
 /*-------------------*\
   # CONTACTOS 
 \*-------------------*/
@@ -573,8 +573,8 @@ top: 0.8em;
 }
 
 .formulario__sub-color{
-  background: var(--tuna);
   padding-left: 19rem;
+  margin-top: -1rem;
 }
 
 .contact__me{
@@ -720,7 +720,7 @@ top: 0.8em;
   box-shadow: none;
 }
 /**/
-/*------------------FORMULARIO----------------- */
+/*------------------FIN FORMULARIO----------------- */
 /*----------------------*\
 # FOOTER
 \*----------------------*/
@@ -731,27 +731,29 @@ top: 0.8em;
 }
 
 .grupo-1{
+  position: static;
   width: 100%;
   max-width: 1350px;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 16px;
-  padding: 45px 0;
-}
+  grid-template-columns: 40% auto auto auto;
+  gap: 16px;
+  padding: 45px 0;}
 
 .grupo-1 .box figure{
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
+  padding-right: 32px;
 
 }
 
 .grupo-1 .box figure img{
   width: 250px;
 }
+
 .grupo-1 .box h2{
   color: var(--white);
   margin-bottom: 25px;
@@ -769,9 +771,9 @@ top: 0.8em;
   display: inline-block;
   text-decoration: none;
   border-radius: 8px;
-  width: 45px;
-  height: 45px;
-  line-height: 45px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
   color: var(--white);
   margin-right: 10px;
   background-color: var(--shuttle-gray);
@@ -787,9 +789,10 @@ top: 0.8em;
 .grupo-2{
   background-color: var(--shuttle-gray);
   padding: 15px;
-  text-align: left;
+  text-align: right;
   color: var(--white);
 }
+
 /*-------------------RESPONSIVE CODE START----------------------*/
 
 /* 
@@ -824,6 +827,87 @@ top: 0.8em;
 */
 /*------------------------------------------------------------*/
 
+/*-------------------*\
+  # PORTFOLIO 
+\*-------------------*/
+.portfolio__sub-color {
+  background: var(--tuna);
+  margin-left: 25.5%;
+  margin-top: -16px;
+}
 
+.portfolio__margen {
+  margin-left: 24%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: left;
+  color: var(--tuna);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--horizon);
+}
+
+.portfolio__container {
+  position: relative;
+  width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+
+}
+
+.portfolio__card {
+  position: relative;
+  max-width: 300px;
+  height: 215px;
+  background-color: var(--white);
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px var(--woodsmoke-050);
+  transition: 0.3s ease-in-out;
+}
+
+.portfolio__card:hover {
+  height: 420px;
+
+}
+
+.portfolio__img-box {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top: -60px;
+  left: 20px;
+  box-shadow: 0 5px 20px var(--woodsmoke-025);
+}
+
+.portfolio__img-box img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.portfolio__content {
+  position: relative;
+  margin-top: -140;
+  padding: 10px 15px;
+  text-align: center;
+  color: var(--tuna);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+
+}
+
+.portfolio__card:hover .portfolio__content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
 
 
