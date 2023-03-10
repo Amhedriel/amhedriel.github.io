@@ -721,6 +721,7 @@ FIN SUBTÍTULOS
   padding: 2rem;
   background-color: var(--white);
   border-radius: 16px 16px 0 0;
+  z-index: 30;
 
 }
 
@@ -738,7 +739,7 @@ FIN SUBTÍTULOS
 .form__input--box{
   position: relative;
   width: 350px;
-  z-index: 20;
+  z-index: 5;
 }
 
 .form__text{
