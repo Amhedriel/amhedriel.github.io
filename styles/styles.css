@@ -66,7 +66,9 @@ a {
   border-radius: 4px;
 }
 
-/*-----------MENU DE NAVEGACIÓN------------*/
+/*-------------------*\
+# MENU DE NAVEGACIÓN
+\*-------------------*/
 .header {
   color: var(--white);
   padding: 1rem;
@@ -127,7 +129,9 @@ a {
   box-shadow: none;
 }
 
-/*----------Menu Lateral-------------*/
+/*-------------------*\
+# MENU LATERAL
+\*-------------------*/
 
 .nav__main--lateral{
   font-family: 'Nunito Sans', sans-serif;
@@ -184,8 +188,14 @@ a {
   text-align: center;
 }
 
+/*-------------------*\
+    FIN MENU LATERAL
+\*-------------------*/
 
-/*----------PRESENTACIÓN----------*/
+/*-------------------*\
+# PRESENTACIÓN
+\*-------------------*/
+
 .img{
   min-height: 1061px;
   background-image: url(/media/img/computer.jpg);
@@ -230,9 +240,13 @@ a {
   border-radius: 8px;
 }
 
-/*------------------ACERCA----------------- */
+/*-------------------*\
+FIN ACERCA
+\*-------------------*/
 
-/* -----MARGEN PRINCIPAL------*/
+/*-------------------*\
+# MARGEN PRINCIPAL
+\*-------------------*/
 .container__acerca,
 .container__estudios,
 .container__habilidades,
@@ -250,8 +264,15 @@ a {
 .container__acerca{
   margin-bottom: 2rem;
 }
-/*-------TERMINA MARGEN-------*/
-/*---------SUBTÍTULOS---------*/
+
+/*-------------------*\
+FIN MARGEN PRINCIPAL
+\*-------------------*/
+
+/*-------------------*\
+# SUBTÍTULOS
+\*-------------------*/
+
 .subtitle-acerca__color{
   background-color: var(--horizon);
 }
@@ -290,7 +311,14 @@ top: 0.8em;
 .subtitle-acerca::after{
   right: -126px;
 }
-/*--------TEXTO----------*/
+
+/*-------------------*\
+FIN SUBTÍTULOS
+\*-------------------*/
+
+/*-------------------*\
+# TEXTO
+\*-------------------*/
 
 .main__container--acerca,
 .main__subtitle--estudios,
@@ -308,7 +336,13 @@ top: 0.8em;
   line-height: 1.5rem;
 }
 
-/* -------------IMÁGENES------------- */
+/*-------------------*\
+    FIN TEXTO
+\*-------------------*/
+
+/*-------------------*\
+# IMÁGENES
+\*-------------------*/
 
 .body__img{
   display: flex;
@@ -349,8 +383,6 @@ top: 0.8em;
   border-radius: 8px;
 }
 
-/*------------------ÍCONOS----------------- */
-
 .main__icon--intereses{
   padding: 2rem 3.5rem;
   display: flex;
@@ -359,7 +391,14 @@ top: 0.8em;
   justify-content: space-evenly;
 }
 
-/*------------------ESTUDIOS----------------- */
+/*-------------------*\
+    FIN IMÁGENES
+\*-------------------*/
+
+/*-------------------*\
+# ESTUDIOS
+\*-------------------*/
+
 .main__container--estudios{
   font-family: 'Nunito Sans', sans-serif;
   margin-bottom: 2rem;
@@ -401,13 +440,17 @@ top: 0.8em;
   padding: 16px 8px;
 }
 
-/*------------------HABILIDADES----------------- */
+/*------------------*\
+# HABILIDADES
+\*------------------*/
 
 .habilidades__container{
   padding: 1rem 8px;
 }
 
-/*----------------- MÉTRICA---------------*/
+  /*-------------------*\
+  # METERS
+  \*-------------------*/
 .metrics{
   font-family: 'Roboto', sans-serif;
   background-color:var(--white);
@@ -498,7 +541,9 @@ top: 0.8em;
 .metrics__bar.metrics__bar60::before{
   width: calc(60% - 10px);
 }
-/*-----------------FIN METERS---------------*/
+  /*-------------------*\
+        FIN METERS
+  \*-------------------*/
 
 
 /*-------------------*\
@@ -548,11 +593,104 @@ top: 0.8em;
   padding-bottom: 48px;
 }
 
+/*-------------------*\
+    FIN CONTACTOS
+\*-------------------*/
 
 
-/**/
-/*------------------FORMULARIO----------------- */
-/**/
+/*-------------------*\
+# PORTFOLIO 
+\*-------------------*/
+.portfolio__sub-color {
+  background: var(--tuna);
+  margin-left: 25.5%;
+  margin-top: -16px;
+}
+
+.portfolio__margen {
+  margin-left: 24%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: left;
+  color: var(--tuna);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--horizon);
+}
+
+.portfolio__container {
+  position: relative;
+  width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.portfolio__card {
+  position: relative;
+  max-width: 300px;
+  height: 215px;
+  background-color: var(--white);
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  flex-direction: column;
+  box-shadow: 0 5px 20px var(--woodsmoke-050);
+  transition: 0.3s ease-in-out;
+}
+
+.portfolio__card:hover {
+  height: 420px;
+}
+
+.portfolio__img-box {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top: -60px;
+  left: 20px;
+  box-shadow: 0 5px 20px var(--woodsmoke-025);
+  border-radius: 0.5rem;
+}
+
+.portfolio__img-box img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.portfolio__content {
+  position: relative;
+  margin-top: -140;
+  padding: 10px 15px;
+  text-align: center;
+  color: var(--tuna);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+
+}
+
+.portfolio__card:hover .portfolio__content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
+
+/*------------------*\
+    FIN PORTFOLIO
+\*----------------- */
+
+
+/*------------------*\
+#FORMULARIO
+\*----------------- */
+
 .talk {
   font-style: none;
   font-display: hidden;
@@ -719,11 +857,14 @@ top: 0.8em;
   border: solid 1px var(--tuna);
   box-shadow: none;
 }
-/**/
-/*------------------FIN FORMULARIO----------------- */
-/*----------------------*\
+
+/*------------------*\
+FIN FORMULARIO
+\*------------------*/
+
+/*------------------*\
 # FOOTER
-\*----------------------*/
+\*------------------*/
 .container__pie{
   /* width: 100%; */
 
@@ -793,7 +934,13 @@ top: 0.8em;
   color: var(--white);
 }
 
-/*-------------------RESPONSIVE CODE START----------------------*/
+/*------------------*\
+FIN FOOTER
+\*------------------*/
+/*-------------------
+RESPONSIVE CODE 
+START
+----------------------*/
 
 /* 
 @media screen and (max-width: 1250px){
@@ -828,88 +975,5 @@ top: 0.8em;
 /*-----------------------------*\
 # FIN QUERYS
 \*-----------------------------*/
-
-/*-------------------*\
-  # PORTFOLIO 
-\*-------------------*/
-.portfolio__sub-color {
-  background: var(--tuna);
-  margin-left: 25.5%;
-  margin-top: -16px;
-}
-
-.portfolio__margen {
-  margin-left: 24%;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  text-align: left;
-  color: var(--tuna);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--horizon);
-}
-
-.portfolio__container {
-  position: relative;
-  width: 1100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 30px;
-
-}
-
-.portfolio__card {
-  position: relative;
-  max-width: 300px;
-  height: 215px;
-  background-color: var(--white);
-  margin: 30px 10px;
-  padding: 20px 15px;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 5px 20px var(--woodsmoke-050);
-  transition: 0.3s ease-in-out;
-}
-
-.portfolio__card:hover {
-  height: 420px;
-
-}
-
-.portfolio__img-box {
-  position: relative;
-  width: 260px;
-  height: 260px;
-  top: -60px;
-  left: 20px;
-  box-shadow: 0 5px 20px var(--woodsmoke-025);
-}
-
-.portfolio__img-box img {
-  max-width: 100%;
-  border-radius: 8px;
-}
-
-.portfolio__content {
-  position: relative;
-  margin-top: -140;
-  padding: 10px 15px;
-  text-align: center;
-  color: var(--tuna);
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.3s ease-in-out;
-
-}
-
-.portfolio__card:hover .portfolio__content {
-  visibility: visible;
-  opacity: 1;
-  margin-top: -40px;
-  transition-delay: 0.3s;
-}
 
 
